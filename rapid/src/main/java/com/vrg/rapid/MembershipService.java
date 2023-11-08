@@ -168,6 +168,10 @@ public final class MembershipService {
         subscriptions.get(ClusterEvents.VIEW_CHANGE).forEach(cb -> cb.accept(clusterStatusChange));
     }
 
+    public long getConfigurationId() {
+        return membershipView.getCurrentConfigurationId();
+    }
+
     /**
      * Entry point for all messages.
      */

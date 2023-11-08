@@ -159,6 +159,10 @@ public final class Cluster {
         this.hasShutdown = true;
     }
 
+    public long getConfigurationId() {
+        return membershipService.getConfigurationId();
+    }
+
     public static class Builder {
         private final Endpoint listenAddress;
         @Nullable private IEdgeFailureDetectorFactory edgeFailureDetector = null;
