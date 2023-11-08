@@ -17,7 +17,7 @@
         <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.lalithsuresh</groupId>
+    <groupId>com.github.deweydbb</groupId>
     <artifactId>build-common</artifactId>
     <version>1.0</version>
     <name>Build Tools</name>

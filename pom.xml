@@ -18,14 +18,16 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.lalithsuresh</groupId>
+    <groupId>com.github.deweydbb</groupId>
     <artifactId>rapid-project</artifactId>
     <packaging>pom</packaging>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0</version>
     <name>rapid-project</name>
+
     <description>Implementation of the Rapid membership protocol</description>
-    <url>https://github.com/lalithsuresh/rapid</url>
+    <url>https://github.com/deweydbb/rapid</url>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -34,16 +36,25 @@
         </license>
     </licenses>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub deweydbb Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/deweydbb/rapid</url>
+        </repository>
+    </distributionManagement>
+
+
     <developers>
         <developer>
-            <name>Lalith Suresh</name>
+            <name>David Klingler</name>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:lalithsuresh/rapid.git</connection>
-        <developerConnection>scm:git:git@github.com:lalithsuresh/rapid.git</developerConnection>
-        <url>http://github.com/lalithsuresh/rapid</url>
+        <connection>scm:git:git@github.com:deweydbb/rapid.git</connection>
+        <developerConnection>scm:git:git@github.com:deweydbb/rapid.git</developerConnection>
+        <url>http://github.com/deweydbb/rapid</url>
     </scm>
 
     <inceptionYear>2016</inceptionYear>
@@ -190,12 +201,6 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
     <profiles>
         <profile>
             <id>release</id>
